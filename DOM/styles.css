@@ -9,10 +9,14 @@
 #num2 {
     background-color: #ffa52c;
 }
+*/
 
-/* #num3 {
-    background-color: #ffff41;
-} */
+ #num3 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+
 /*
 #num4 {
     background-color: #008018;

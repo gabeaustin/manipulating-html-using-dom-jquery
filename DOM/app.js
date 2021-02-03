@@ -46,10 +46,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     numThree.addEventListener("mouseover", function() {
         mainDiv.style.backgroundColor = "green";
+        numThree.style.color = "green";
     })
 
     numThree.addEventListener("mouseout", function() {
-        mainDiv.style.backgroundColor = "white";
+        mainDiv.style.backgroundColor = "initial";
+        numThree.style.color = "initial";
     })
 
 
