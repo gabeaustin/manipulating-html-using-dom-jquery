@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     // numTwo
     $("#buttonForNumTwo").click(function() {
-        console.log($("#someTextInputBox").val());
+        alert($("#someTextInputBox").val());
     })
 
 
