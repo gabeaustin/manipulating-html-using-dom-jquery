@@ -12,5 +12,9 @@ $(document).ready(function() {
         alert($("#someTextInputBox").val());
     })
 
+    // numThree
+    $("#numThree").mouseover(function() {
+        // $("div#numThree").css("background-color", "#355e3b");
+    })
 
 })
