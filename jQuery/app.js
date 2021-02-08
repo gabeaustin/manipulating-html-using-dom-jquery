@@ -14,17 +14,30 @@ $(document).ready(function() {
 
     // numThree
     $("#numThree").mouseover(function() {
-        $("#numThree").css("background-color", "#355e3b");
+        $(this).css("background-color", "#355e3b");
     })
 
     $("#numThree").mouseleave(function() {
-        $("#numThree").css("background-color", "#cfcfcf");
+        $(this).css("background-color", "#cfcfcf");
     })
 
     // numFour
-    $("#numFourPara").click(function() {
-        $("#numFourPara").css("color", "red");
-    })
+    let safeColors = ["00", "33", "66", "99", "cc", "ff"];
+    let rand = function() {
+        return Math.floor(Math.random()*6);
+    };
+    
+    let randomColor = function() {
+        let g = safeColors[rand()];
+        let r = safeColors[rand()];
+        let b = safeColors[rand()];
+        return "#"+r+g+b;
+    };
+
+    $('#numFourPara').click(function() {
+        $(this).css("color", randomColor());
+    });
+    
     
 
 })
