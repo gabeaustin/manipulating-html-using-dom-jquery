@@ -45,14 +45,14 @@ $(document).ready(function() {
 
     // numSix
     let friendsArray = ["Noah", "Alex", "Ricky", "Chance", "Wade", "Trey", "Eddie", "Guy", "Junito", "Brandy"];
-
-    for (let i = 0; i < friendsArray.length; i++) {
-        // $("#btnToAddFriends").click(function() {
-            $("ul").append("<li> " + friendsArray[i] + " </li>");
-        // })
-        
-    }
-    
-    
-
+    let counter = 0;
+    $("#btnToAddFriends").click(function() {
+        if (friendsArray[counter] != undefined){
+            let friendsLi = $(`<li>${friendsArray[counter]}</li>`);
+            $("#friendsList").append(friendsLi);
+        } else {
+            alert("That's All Folks!");
+        }
+        counter++;;
+    });
 })
