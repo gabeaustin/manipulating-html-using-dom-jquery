@@ -34,9 +34,13 @@ $(document).ready(function() {
         return "#"+r+g+b;
     };
 
-    $('#numFourPara').click(function() {
+    $("#numFourPara").click(function() {
         $(this).css("color", randomColor());
     });
+
+    $("#btnClickForName").click(function() {
+        $("#nameDisplay").append("<span>I'm Gabriel, but most call me Gabe.</span>")
+    })
     
     
 
