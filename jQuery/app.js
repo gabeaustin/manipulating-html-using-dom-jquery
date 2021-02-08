@@ -21,4 +21,10 @@ $(document).ready(function() {
         $("#numThree").css("background-color", "#cfcfcf");
     })
 
+    // numFour
+    $("#numFourPara").click(function() {
+        $("#numFourPara").css("color", "red");
+    })
+    
+
 })

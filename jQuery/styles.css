@@ -4,9 +4,10 @@
 }
 
 .bgColorNumThree {
-    /* border: solid 1px #355e3b; */
-    border: solid 1px red;
     background-color: #cfcfcf;
-    /* #355e3b */
-    /* background-color: #fed8b1; */
+    /* padding: 2rem; */
+}
+
+.objectives > div {
+    padding: 1rem;
 }
