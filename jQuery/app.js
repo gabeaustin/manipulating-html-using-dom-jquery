@@ -38,9 +38,20 @@ $(document).ready(function() {
         $(this).css("color", randomColor());
     });
 
+    // numFive
     $("#btnClickForName").click(function() {
         $("#nameDisplay").append("<span>I'm Gabriel, but most call me Gabe.</span>")
-    })
+    });
+
+    // numSix
+    let friendsArray = ["Noah", "Alex", "Ricky", "Chance", "Wade", "Trey", "Eddie", "Guy", "Junito", "Brandy"];
+
+    for (let i = 0; i < friendsArray.length; i++) {
+        // $("#btnToAddFriends").click(function() {
+            $("ul").append("<li> " + friendsArray[i] + " </li>");
+        // })
+        
+    }
     
     
 
