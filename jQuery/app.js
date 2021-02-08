@@ -14,7 +14,11 @@ $(document).ready(function() {
 
     // numThree
     $("#numThree").mouseover(function() {
-        // $("div#numThree").css("background-color", "#355e3b");
+        $("#numThree").css("background-color", "#355e3b");
+    })
+
+    $("#numThree").mouseleave(function() {
+        $("#numThree").css("background-color", "#cfcfcf");
     })
 
 })
